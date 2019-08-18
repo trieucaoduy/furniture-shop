@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fff;
+    font-weight: bold;
+}
+
+a {
+    color: #fff;
+}
+
+
+/*----------HEADER SECTION----------*/
+
+nav {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    font-size: 120%;
+    height: 80px;
+    width: 100%;
+    top: 0;
+    overflow: hidden;
+    z-index: 9999;
+}
+
+.nav-brand {
+    float: left;
+    padding: 10px 50px 10px 50px;
+}
+
+nav .il a {
+    padding: 0 10px;
+}
+
+nav p {
+    display: inline;
+    padding: 10px;
+    font-size: 120%;
+    font-weight: 800;
+}
+
+nav .fa-couch {
+    color: #f1c40f;
+    font-size: 120%;
+}
+
+.container nav .menu {
+    position: absolute;
+    right: 50px;
+    max-height: 100%;
+}
+
+.menu li {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.menu a {
+    color: #fff;
+    padding: 0 10px;
+    position: relative;
+    transition: 0.5s;
+}
+
+.menu a::after {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0.15em;
+    background: #fff;
+    bottom: -3px;
+    left: 0;
+    transition: 0.3s;
+}
+
+.menu li:hover a::after {
+    width: 100%;
+}
+
+nav .il i:hover {
+    transform: scale(1.5);
+    transition: 0.3s;
+}
+
+.nav-toggle {
+    font-size: 150%;
+    display: none;
+    position: absolute;
+    right: 50px;
+}
+
+
+/*----------END HEADER-------------*/
+
+
+/*----------SHOWCASE SECTION------*/
+
+.showcase {
+    background: url("/resources/img/img-2.jpg") no-repeat fixed;
+    background-position: center;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.showcase h1 {
+    font-size: 120px;
+    letter-spacing: 10px;
+    font-weight: 100;
+    line-height: 200px;
+    color: #fff;
+}
+
+.showcase h2 {
+    font-size: 150%;
+    font-weight: 300;
+    width: 50%;
+    color: #fff;
+}
+
+.showcase .btn-started {
+    margin: 30px 30px;
+    padding: 20px 20px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+.btn-started a {
+    color: #fff;
+}
+
+.btn-started:hover {
+    background: #DEA925;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+/*--------------POPULAR PRODUCT SECTION---*/
+
+.popular-product h1 {
+    color: #000;
+    text-align: center;
+    font-size: 200%;
+    margin-top: 50px;
+    padding: 10px;
+}
+
+.popular-product p {
+    text-align: center;
+    color: #323335;
+}
+
+.about-picture {
+    background: #f1c40f;
+}
+
+
+/*-----------END POPULAR PRODUCT SECTION--*/
+
+
+/*----------------------------------------*/
+
+@media only screen and (max-width: 480px) {
+    nav {
+        position: relative;
+        overflow: visible;
+    }
+    .container nav .menu {
+        display: none;
+        width: 100%;
+        top: 80px;
+        right: 0;
+    }
+    nav .menu li {
+        display: block;
+        text-align: center;
+        padding: 10px;
+        margin: 0;
+    }
+    nav .menu li:nth-child(5),
+    nav .menu li:nth-child(6) {
+        position: absolute;
+    }
+    nav .il {
+        padding-right: 50px;
+    }
+    nav .il a {
+        padding: 5px;
+    }
+    .nav-toggle {
+        display: block;
+    }
+}
+
+.g {
+    color: #0B0c10;
+    color: rgb(31, 40, 51);
+    color: #c5c6c7;
+    color: #66fcf1;
+    color: rgb(69, 162, 158);
+}
+
+x
